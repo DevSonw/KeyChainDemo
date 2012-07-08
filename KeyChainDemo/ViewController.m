@@ -7,8 +7,16 @@
 //
 
 #import "ViewController.h"
+#import "UserInfoViewController.h"
+#import "MyKeyChainHelper.h"
 
 @implementation ViewController
+
+@synthesize userNameTextField = _userNameTextField;
+@synthesize pwdTextField = _pwdTextField;
+
+NSString * const KEY_USERNAME = @"com.company.app.username";  
+NSString * const KEY_PASSWORD = @"com.company.app.password";  
 
 - (void)didReceiveMemoryWarning
 {
@@ -22,6 +30,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    _userNameTextField.text = [MyKeyChainHelper getUserNameWithService:KEY_USERNAME];
+    _pwdTextField.text = [MyKeyChainHelper getPasswordWithService:KEY_PASSWORD];
+    _isSavePwd = YES;
 }
 
 - (void)viewDidUnload
@@ -55,6 +66,36 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+- (IBAction)setSavePwdOn:(id)sender
+{
+    UISwitch *savePwdSwitch = (UISwitch*)sender;
+    if ([savePwdSwitch isOn]) 
+    {
+        _isSavePwd = YES;
+        [MyKeyChainHelper deleteWithUserNameService:KEY_USERNAME psaawordService:KEY_PASSWORD];
+    }
+    else
+    {
+        _isSavePwd = NO;
+        
+    }
+}
+
+- (IBAction)loginBtnPressed:(id)sender
+{
+    NSString* userName = _userNameTextField.text;
+    NSString* pwd = _pwdTextField.text;
+    if (_isSavePwd) 
+    {
+        [MyKeyChainHelper saveUserName:userName userNameService:KEY_USERNAME psaaword:pwd psaawordService:KEY_PASSWORD];
+    }
+    
+    UserInfoViewController *userInfoController = [[UserInfoViewController alloc] init];
+    [self presentModalViewController: userInfoController animated: YES];
+    userInfoController.welcomeMessageLabel.text = [NSString stringWithFormat:@"Welcom,%@,your password is %@",userName,pwd];
+    [userInfoController release];
 }
 
 @end

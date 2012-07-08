@@ -9,5 +9,17 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    BOOL _isSavePwd;
+    
+    IBOutlet UITextField *_userNameTextField; 
+    IBOutlet UITextField *_pwdTextField; 
+}
+
+@property(nonatomic, retain) UITextField *userNameTextField;  
+@property(nonatomic, retain) UITextField *pwdTextField;  
+
+- (IBAction)setSavePwdOn:(id)sender;
+- (IBAction)loginBtnPressed:(id)sender;
 
 @end

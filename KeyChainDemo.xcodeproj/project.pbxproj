@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB524E7D15A92BF200F45E7F /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB524E7C15A92BF200F45E7F /* UserInfoViewController.m */; };
+		AB524E8015A92C5D00F45E7F /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB524E7F15A92C5D00F45E7F /* UserInfoViewController.xib */; };
 		ABC2DEEC15A92639001DCE38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC2DEEB15A92639001DCE38 /* UIKit.framework */; };
 		ABC2DEEE15A92639001DCE38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC2DEED15A92639001DCE38 /* Foundation.framework */; };
 		ABC2DEF015A92639001DCE38 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC2DEEF15A92639001DCE38 /* CoreGraphics.framework */; };
@@ -15,22 +17,30 @@
 		ABC2DEFC15A92639001DCE38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2DEFB15A92639001DCE38 /* AppDelegate.m */; };
 		ABC2DEFF15A92639001DCE38 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2DEFE15A92639001DCE38 /* ViewController.m */; };
 		ABC2DF0215A92639001DCE38 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABC2DF0015A92639001DCE38 /* ViewController.xib */; };
+		ABF7085615A932AD00816678 /* MyKeyChainHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF7085515A932AD00816678 /* MyKeyChainHelper.m */; };
+		ABF7085A15A934EB00816678 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF7085915A934EB00816678 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB524E7B15A92BF200F45E7F /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
+		AB524E7C15A92BF200F45E7F /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
+		AB524E7F15A92C5D00F45E7F /* UserInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UserInfoViewController.xib; path = ../UserInfoViewController.xib; sourceTree = "<group>"; };
 		ABC2DEE715A92639001DCE38 /* KeyChainDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyChainDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC2DEEB15A92639001DCE38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ABC2DEED15A92639001DCE38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ABC2DEEF15A92639001DCE38 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		ABC2DEF315A92639001DCE38 /* KeyChainDemo-Info.plist */ = {isa = PBXFileReference; path = "KeyChainDemo-Info.plist"; sourceTree = "<group>"; };
+		ABC2DEF315A92639001DCE38 /* KeyChainDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KeyChainDemo-Info.plist"; sourceTree = "<group>"; };
 		ABC2DEF515A92639001DCE38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ABC2DEF715A92639001DCE38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		ABC2DEF915A92639001DCE38 /* KeyChainDemo-Prefix.pch */ = {isa = PBXFileReference; path = "KeyChainDemo-Prefix.pch"; sourceTree = "<group>"; };
-		ABC2DEFA15A92639001DCE38 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		ABC2DEF915A92639001DCE38 /* KeyChainDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeyChainDemo-Prefix.pch"; sourceTree = "<group>"; };
+		ABC2DEFA15A92639001DCE38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ABC2DEFB15A92639001DCE38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ABC2DEFD15A92639001DCE38 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		ABC2DEFD15A92639001DCE38 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		ABC2DEFE15A92639001DCE38 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		ABC2DF0115A92639001DCE38 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		ABF7085415A932AD00816678 /* MyKeyChainHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyKeyChainHelper.h; sourceTree = "<group>"; };
+		ABF7085515A932AD00816678 /* MyKeyChainHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyKeyChainHelper.m; sourceTree = "<group>"; };
+		ABF7085915A934EB00816678 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABF7085A15A934EB00816678 /* Security.framework in Frameworks */,
 				ABC2DEEC15A92639001DCE38 /* UIKit.framework in Frameworks */,
 				ABC2DEEE15A92639001DCE38 /* Foundation.framework in Frameworks */,
 				ABC2DEF015A92639001DCE38 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +61,7 @@
 		ABC2DEDC15A92639001DCE38 = {
 			isa = PBXGroup;
 			children = (
+				ABF7085915A934EB00816678 /* Security.framework */,
 				ABC2DEF115A92639001DCE38 /* KeyChainDemo */,
 				ABC2DEEA15A92639001DCE38 /* Frameworks */,
 				ABC2DEE815A92639001DCE38 /* Products */,
@@ -83,6 +95,11 @@
 				ABC2DEFE15A92639001DCE38 /* ViewController.m */,
 				ABC2DF0015A92639001DCE38 /* ViewController.xib */,
 				ABC2DEF215A92639001DCE38 /* Supporting Files */,
+				AB524E7B15A92BF200F45E7F /* UserInfoViewController.h */,
+				AB524E7C15A92BF200F45E7F /* UserInfoViewController.m */,
+				AB524E7F15A92C5D00F45E7F /* UserInfoViewController.xib */,
+				ABF7085415A932AD00816678 /* MyKeyChainHelper.h */,
+				ABF7085515A932AD00816678 /* MyKeyChainHelper.m */,
 			);
 			path = KeyChainDemo;
 			sourceTree = "<group>";
@@ -150,6 +167,7 @@
 			files = (
 				ABC2DEF615A92639001DCE38 /* InfoPlist.strings in Resources */,
 				ABC2DF0215A92639001DCE38 /* ViewController.xib in Resources */,
+				AB524E8015A92C5D00F45E7F /* UserInfoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +181,8 @@
 				ABC2DEF815A92639001DCE38 /* main.m in Sources */,
 				ABC2DEFC15A92639001DCE38 /* AppDelegate.m in Sources */,
 				ABC2DEFF15A92639001DCE38 /* ViewController.m in Sources */,
+				AB524E7D15A92BF200F45E7F /* UserInfoViewController.m in Sources */,
+				ABF7085615A932AD00816678 /* MyKeyChainHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +292,7 @@
 				ABC2DF0715A92639001DCE38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
